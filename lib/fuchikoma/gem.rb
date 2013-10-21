@@ -1,6 +1,6 @@
 require 'rubygems'
 
-module Fuchikoma
+class Fuchikoma
   class Gem
     attr_accessor :name, :old_version, :new_version, :tag_prefx
 

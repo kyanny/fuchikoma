@@ -1,5 +1,5 @@
-module Fuchikoma
-  class Diff
+class Fuchikoma
+  class DiffParser
     class LineParser
       REGEXP = /\A
                ([+-])     # sign

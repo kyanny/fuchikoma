@@ -1,7 +1,7 @@
 require 'net/https'
 require 'uri'
 
-module Fuchikoma
+class Fuchikoma
   class Compare
     attr_accessor :gem
 
