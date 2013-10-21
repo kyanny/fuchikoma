@@ -14,6 +14,7 @@ class Fuchikoma
 
     def homepage
       ::Gem::Specification.find_by_name(@name).homepage.to_s.sub(/\Ahttps?/, 'https')
+    rescue ::Gem::LoadError
     end
 
     def tag_prefx
