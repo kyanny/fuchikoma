@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+$: << 'lib'
+require 'fuchikoma'
+
+puts Fuchikoma.new(ARGF.read).to_s
