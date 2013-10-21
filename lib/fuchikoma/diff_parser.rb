@@ -16,9 +16,9 @@ class Fuchikoma
     end
 
     def parse_line(line)
-      _, gem_name, version_number = @line_parser.parse(line)
-      if gem_name && version_number
-        @diff.push gem_name, version_number
+      @line_parser.parse(line)
+      if @line_parser.present?
+        @diff.push @line_parser.gem_name, @line_parser.version_number
       end
     end
   end
